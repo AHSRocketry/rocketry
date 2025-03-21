@@ -24,7 +24,17 @@
           <ul>
             <li><a href="#" onclick="updateContent('aerodynamics')">Aerodynamics</a></li>
             <li><a href="#" onclick="updateContent('stability')">Stability</a></li>
-            <li><a href="#" onclick="updateContent('openrocket')">OpenRocket Design</a></li>
+            <li class="dropdown">
+              <a href="#">OpenRocket Design &#9662;</a>
+              <ul class="dropdown-content">
+                <li><a href="#" onclick="updateContent('openrocket-nose')">Nose</a></li>
+                <li><a href="#" onclick="updateContent('openrocket-body-tube')">Body Tube</a></li>
+                <li><a href="#" onclick="updateContent('openrocket-motor-mount')">Motor Mount</a></li>
+                <li><a href="#" onclick="updateContent('openrocket-fins')">Fins</a></li>
+                <li><a href="#" onclick="updateContent('openrocket-retainers')">Retainers</a></li>
+                <li><a href="#" onclick="updateContent('openrocket-recovery-systems')">Recovery Systems</a></li>
+                <li><a href="#" onclick="updateContent('openrocket-finishing')">Finishing</a></li>
+              </ul>
             <li class="dropdown">
               <a href="#">Fabrication &#9662;</a>
               <ul class="dropdown-content">
@@ -44,7 +54,7 @@
       <div id="content-area" class="right-column"></div>
     </div>
     <div id="content-source" style="display: none;">
-      <div id="nose">
+      <div id="openrocket-nose">
         <h1 style="color: var(--content-text);">Nose Cones</h1>
         <p>
         The nose is the front end of the model rocket (astounding, I know). It
@@ -124,12 +134,48 @@
           malfunctioning rocket into a missile or lawn dart. Besides, rounded nose
           tips perform better than pointed ones.<br /><br />
           Several commercial noses are available, and it can be very simple to
-          select a Designing one's own nose cone is a lot of fun and one of the
+          select a predesigned nose and move on.<br><br>Designing one's own nose cone is a lot of fun and one of the
           key ways to customize a rocket. It is also one of the key components of
           a rocket's stability and aerodynamics. It is therefore
           <strong><em>very</em></strong> important that fabricated model matches
           the computer design.
         </p>
+        <h2 style="color: var(--content-text)">Designing a Nose in Open Rocket</h2>
+        <p>Design your nose in OpenRocket by selecting the Sustainer from the Design Tree and choosing "Nose Cone" from the Add New Component Section. Then either select from a list of pre-designed noses or close it and make your own. The things you <strong>must</strong> modify/confirm are:</p>
+        <div class="content-container">
+          <div class="content-left">
+            <ol><h4>General Tab</h4>
+              <li>Nose cone shape</li>
+              <li>Length</li>
+              <li>Base diameter (match body tube)</li>
+              <li>Wall thickness (typically 1.5 to 2 mm</li>
+              <li>Component Material (PLA or Resin)</li>
+            </ol>
+            <ol><h4>Shoulder Tab</h4>
+              <li>Diameter (match inner diameter of tube minus 0.4 mm)</li>
+              <li>Length (for shoulders about half to a full caliber is appropriate)</li>
+              <li>Thickness (typically matches nose cone)</li>
+            </ol>
+          </div>
+          <div class="content-right">
+            <img style ="scale: 0.2"src="./images/OR-Nose-01.png" />
+            <img src="./images/OR-Nose-02.png" />
+            <img src="./images/OR-Nose-03.png" />
+          </div>
+        </div>
+        <h3 style="color: var(--table-text)">Video Example</h3>
+          <div>
+            <iframe
+              width= "100%"
+              height="600"
+              src="https://youtu.be/XiMwgFn-G7s"
+              title="AHS Rocketry Nose Cone Design"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
       </div>
       <div id="body-tube">
         <h1 class="content-header">Body Tube</h1>
@@ -200,7 +246,7 @@
         </p>
         &nbsp;
         <h2 class="content-header">Fin Slots</h2>
-        <p>The other part of a tube that needs to be cut are slots for fins to pass through the </p>
+        <p>We also need to cut slots in the body tube to allow the fins to pass through the tube wall between the motor mount centering rings. Cutting these slots also ensures the fins are attached radially and at even spacing.</p>
       </div>
       <h1>Motor Mount & Shock Cord</h1>
       <h2>Sizes</h2>

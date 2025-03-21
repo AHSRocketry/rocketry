@@ -340,3 +340,11 @@ nav a:hover {
 .content-header {
   color: var(--content-text) !important;
 }
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+}

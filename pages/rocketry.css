@@ -404,3 +404,11 @@ iframe {
   position: relative;
   z-index:1;
 }
+
+.blue-space {
+  margin: 0px 100px 100px 100px;
+}
+
+.blue-space h1, .blue-space h2, .blue-space h3, .blue-space h4 {
+  color: #f3f3f3;
+}

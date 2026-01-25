@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
   <title>Design & Build</title>
   <link href="rocketry.css" type="text/css" rel="stylesheet" />
   <style>
@@ -43,7 +44,8 @@
     .link-list li {
       margin: 4px 0;
     }
-    .link-list a, .link-list button.linklike {
+    .link-list a,
+    .link-list button.linklike {
       color: var(--link, #0b63ce);
       text-decoration: underline;
       background: none;
@@ -63,7 +65,7 @@
 <body>
   <!-- Header Section -->
   <header class="header">
-    <img src="./images/AHSRocketryLogo.png" class="header-logo" />
+    <img src="./images/AHSRocketryLogo.png" class="header-logo" alt="AHS Rocketry Logo" />
     <h1 class="title">American Heritage Rocketry</h1>
   </header>
 
@@ -71,47 +73,49 @@
   <nav class="nav-buttons">
     <a class="button" href="mainPage.html">Home</a>
     <a class="button" href="about.html">About</a>
-    <button class="current-page" onclick="location.href='fabrication.html'">Design & Build</button>
+    <button class="current-page" onclick="location.href='fabrication.html'">Design &amp; Build</button>
     <a class="button" href="arcatAHS.html">ARC at AHS</a>
     <a class="button" href="schedule.html">Schedule</a>
   </nav>
 
   <div class="container">
+    <!-- LEFT SIDEBAR MENU (unchanged) -->
     <nav class="menu">
       <div class="left-column">
         <ul>
-          <li><a href='#' onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/model-rockets.html')">About Model Rockets</a></li>
-          <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html')">Aerodynamics & Stability</a></li>
+          <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/model-rockets.html')">About Model Rockets</a></li>
+          <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html')">Aerodynamics &amp; Stability</a></li>
 
           <li class="dropdown">
             <a href="#">OpenRocket Design &#9662;</a>
-            <ul class="dropdown-content">
-              <li><a href='#' onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html')">Setup</a></li>
-              <li><a href='#' onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-nose-cone.html')">Nose Cone</a></li>
+            <ul class="dropdown-content" style="display:none;">
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html')">Setup</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-nose-cone.html')">Nose Cone</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-body-tube.html')">Body Tube</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-motor-mount.html')">Motor Mount</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-fins.html')">Fins</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-retainers.html')">Retainers</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-recovery-systems.html')">Recovery Systems</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html')">Finishing</a></li>
-              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-clusters.html')">Clusters & Pods</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-clusters.html')">Clusters &amp; Pods</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-staging.html')">Staging</a></li>
-            </ul>
-
-          <li class="dropdown">
-            <a href="#">Fabrication &#9662;</a>
-            <ul class="dropdown-content">
-              <li><a href="#" onclick="updateContent('nose')">Nose</a></li>
-              <li><a href='#' onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-body-tube.html')">Body Tube</a></li>
-              <li><a href="#" onclick="updateContent('motor-mount')">Motor Mount</a></li>
-              <li><a href='#' onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html')">Fins</a></li>
-              <li><a href="#" onclick="updateContent('retainers')">Retainers</a></li>
-              <li><a href="#" onclick="updateContent('recovery-systems')">Recovery Systems</a></li>
-              <li><a href="#" onclick="updateContent('finishing')">Finishing</a></li>
             </ul>
           </li>
 
-          <li><a href="#" onclick="updateContent('motors')">Motors</a></li>
+          <li class="dropdown">
+            <a href="#">Fabrication &#9662;</a>
+            <ul class="dropdown-content" style="display:none;">
+              <li><a href="#" onclick="missing('Nose fabrication page')">Nose</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-body-tube.html')">Body Tube</a></li>
+              <li><a href="#" onclick="missing('Motor mount fabrication page')">Motor Mount</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html')">Fins</a></li>
+              <li><a href="#" onclick="missing('Retainers fabrication page')">Retainers</a></li>
+              <li><a href="#" onclick="missing('Recovery systems fabrication page')">Recovery Systems</a></li>
+              <li><a href="#" onclick="missing('Finishing fabrication page')">Finishing</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" onclick="missing('Motors overview page')">Motors</a></li>
         </ul>
       </div>
     </nav>
@@ -127,12 +131,12 @@
 
           <!-- 1. Mission -->
           <section class="step-card" aria-labelledby="step-mission">
-            <h3 id="step-mission">1) Mission Requirements & Constraints</h3>
+            <h3 id="step-mission">1) Mission Requirements &amp; Constraints</h3>
             <p>Define the goal: basic flight, payload, altitude, and available materials, motors, and tools.</p>
             <ul class="link-list">
-              <li><button class="linklike" onclick="/* TODO: link to mission/constraints page */ alert('TODO: Mission page');">Specify the rocket’s mission</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to materials & motors overview */ alert('TODO: Materials & motors');">Materials & motors available</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to tools inventory */ alert('TODO: Tools inventory');">Tools you can use</button></li>
+              <li><a href="#" onclick="missing('Mission planning page')">Specify the rocket’s mission</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/model-rockets.html')">Materials &amp; motors overview</a></li>
+              <li><a href="#" onclick="missing('Tools inventory page')">Tools you can use</a></li>
             </ul>
           </section>
 
@@ -141,7 +145,7 @@
             <h3 id="step-or">2) Design in OpenRocket</h3>
             <p>Build the digital rocket and verify stability (CG vs CP), then choose a motor.</p>
             <ul class="link-list">
-              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html')">OpenRocket — Install / Setup</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html')">Install / Setup</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html')">OpenRocket — Basics</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-nose-cone.html')">Design the Nose Cone</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-body-tube.html')">Design the Body Tube</a></li>
@@ -149,7 +153,7 @@
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-fins.html')">Design the Fins</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-recovery-systems.html')">Design the Recovery System</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html')">Check CG vs CP (Stability)</a></li>
-              <li><a href="#" onclick="/* TODO: link to your checklist page */ alert('TODO: OpenRocket Design Checklist');">Complete the Design Checklist</a></li>
+              <li><a href="#" onclick="missing('Design checklist page')">Complete the Design Checklist</a></li>
             </ul>
           </section>
 
@@ -158,15 +162,15 @@
             <h3 id="step-cad">3) Draft Parts in OnShape</h3>
             <p>Create CAD for printed and laser-cut parts: nose, transitions, rings, fins, retainers, and jigs.</p>
             <ul class="link-list">
-              <li><button class="linklike" onclick="/* TODO: link to OnShape account page */ alert('TODO: OnShape account');">Create an OnShape Account</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to OnShape basics page */ alert('TODO: OnShape basics');">OnShape — Basics</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to Nose Cone in OnShape */ alert('TODO: OnShape Nose Cone');">Make a Nose Cone</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to Transition in OnShape */ alert('TODO: OnShape Transition');">Make a Transition</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to Centering Ring/Bulkhead in OnShape */ alert('TODO: OnShape Centering Ring');">Make a Centering Ring/Bulkhead</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to Fin in OnShape */ alert('TODO: OnShape Fin');">Make a Fin</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to Retainer in OnShape */ alert('TODO: OnShape Retainer');">Make a Retainer</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to Slot Cutting Guide in OnShape */ alert('TODO: OnShape Slot Guide');">Make a Slot Cutting Guide</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to Fin Alignment Jig in OnShape */ alert('TODO: OnShape Fin Jig');">Make a Fin Alignment Jig</button></li>
+              <li><a href="#" onclick="missing('OnShape account/how-to page')">Create an OnShape Account</a></li>
+              <li><a href="#" onclick="missing('OnShape basics page')">OnShape — Basics</a></li>
+              <li><a href="#" onclick="missing('OnShape Nose Cone tutorial')">Make a Nose Cone</a></li>
+              <li><a href="#" onclick="missing('OnShape Transition tutorial')">Make a Transition</a></li>
+              <li><a href="#" onclick="missing('OnShape Centering Ring/Bulkhead tutorial')">Make a Centering Ring/Bulkhead</a></li>
+              <li><a href="#" onclick="missing('OnShape Fin tutorial')">Make a Fin</a></li>
+              <li><a href="#" onclick="missing('OnShape Retainer tutorial')">Make a Retainer</a></li>
+              <li><a href="#" onclick="missing('OnShape Slot Cutting Guide tutorial')">Make a Slot Cutting Guide</a></li>
+              <li><a href="#" onclick="missing('OnShape Fin Alignment Jig tutorial')">Make a Fin Alignment Jig</a></li>
             </ul>
           </section>
 
@@ -175,8 +179,8 @@
             <h3 id="step-print">4) Fabrication — 3D Printing</h3>
             <p>Export STL from OnShape, slice in Cura, then print nose cones, transitions, and retainers.</p>
             <ul class="link-list">
-              <li><button class="linklike" onclick="/* TODO: link to Cura basics page */ alert('TODO: Cura Basics');">Learn Cura Slicer</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to 3D print workflow page */ alert('TODO: 3D Printing workflow');">3D‑print Nose Cones & Transitions</button></li>
+              <li><a href="#" onclick="missing('Cura basics page')">Learn Cura Slicer</a></li>
+              <li><a href="#" onclick="missing('3D printing workflow page')">3D‑print Nose Cones &amp; Transitions</a></li>
             </ul>
           </section>
 
@@ -185,21 +189,21 @@
             <h3 id="step-laser">5) Fabrication — Laser Cutting</h3>
             <p>Cut flat parts on Glowforge: fins, centering rings, bulkheads, and jigs.</p>
             <ul class="link-list">
-              <li><button class="linklike" onclick="/* TODO: link to Glowforge usage page */ alert('TODO: Glowforge How‑To');">Using the Glowforge</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to centering rings/bulkheads cut page */ alert('TODO: Cut Rings & Bulkheads');">Cut centering rings & bulkheads</button></li>
-              <li><button class="linklike" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html')">Cut fins</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to fin-alignment jig cut page */ alert('TODO: Cut Fin Alignment Jig');">Cut fin‑alignment jigs</button></li>
+              <li><a href="#" onclick="missing('Glowforge usage page')">Using the Glowforge</a></li>
+              <li><a href="#" onclick="missing('Cut rings & bulkheads page')">Cut centering rings &amp; bulkheads</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html')">Cut fins</a></li>
+              <li><a href="#" onclick="missing('Cut fin‑alignment jig page')">Cut fin‑alignment jigs</a></li>
             </ul>
           </section>
 
           <!-- 6. Tubes & Slots -->
           <section class="step-card" aria-labelledby="step-tubes">
-            <h3 id="step-tubes">6) Body & Motor Tubes, Slots, Edges</h3>
+            <h3 id="step-tubes">6) Body &amp; Motor Tubes, Slots, Edges</h3>
             <p>Select tubes and prep them for assembly.</p>
             <ul class="link-list">
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-body-tube.html')">Select body tube, cut to length, and cut fin slots</a></li>
-              <li><button class="linklike" onclick="/* TODO: link to motor tube page */ alert('TODO: Motor tubes');">Select motor tube(s) & cut to length</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to motor block page */ alert('TODO: Motor blocks');">Cut motor blocks</button></li>
+              <li><a href="#" onclick="missing('Motor tube page')">Select motor tube(s) &amp; cut to length</a></li>
+              <li><a href="#" onclick="missing('Motor blocks page')">Cut motor blocks</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html')">Round fin edges</a></li>
             </ul>
           </section>
@@ -209,12 +213,12 @@
             <h3 id="step-assembly">7) Assembly</h3>
             <p>Dry-fit, glue, and integrate internal structures, then complete final structure.</p>
             <ul class="link-list">
-              <li><button class="linklike" onclick="/* TODO: link to motor mount assembly page */ alert('TODO: Assemble Motor Mount');">Assemble the motor mount</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to install motor mount page */ alert('TODO: Insert Motor Mount');">Insert motor mount into body tube</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to fin install page */ alert('TODO: Insert Fins');">Insert fins</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to transitions install page */ alert('TODO: Insert Transitions');">Insert transitions</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to recovery install page */ alert('TODO: Insert Recovery System');">Insert recovery system</button></li>
-              <li><button class="linklike" onclick="/* TODO: link to nose attach page */ alert('TODO: Attach Nose Cone');">Attach the nose cone</button></li>
+              <li><a href="#" onclick="missing('Assemble motor mount page')">Assemble the motor mount</a></li>
+              <li><a href="#" onclick="missing('Install motor mount page')">Insert motor mount into body tube</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html')">Insert fins</a></li>
+              <li><a href="#" onclick="missing('Insert transitions page')">Insert transitions</a></li>
+              <li><a href="#" onclick="missing('Recovery system install page')">Insert recovery system</a></li>
+              <li><a href="#" onclick="missing('Attach nose cone page')">Attach the nose cone</a></li>
             </ul>
           </section>
 
@@ -223,17 +227,78 @@
             <h3 id="step-finish">8) Finishing</h3>
             <p>Prep surfaces, then paint and decal.</p>
             <ul class="link-list">
-              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html')">Spray fill nose cone, transitions, and fins</a></li>
-              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html')">Sand nose cone, transitions, fins</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html')">Spray fill &amp; surface prep</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html')">Sand smooth</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html')">Paint the rocket</a></li>
             </ul>
           </section>
 
-          <!-- 9. (Optional) Pre-Flight -->
+          <!-- 9. Pre-Flight -->
           <section class="step-card" aria-labelledby="step-preflight">
             <h3 id="step-preflight">9) Pre‑Flight (Stability, Safety, Checklist)</h3>
-            <p>Weigh, update OpenRocket, re-check CP/CG, verify recovery & retention, and complete safety checks.</p>
+            <p>Weigh, update OpenRocket, re-check CP/CG, verify recovery &amp; retention, complete safety checks.</p>
             <ul class="link-list">
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html')">Re-check stability (CG vs CP)</a></li>
-              <li><button class="linklike" onclick="/* TODO: link to safety checklist page */ alert('TODO: Safety Checklist');">Safety & pre‑flight checklist</button></li>
+              <li><a href="#" onclick="missing('Safety checklist page')">Safety &amp; pre‑flight checklist</a></li>
             </ul>
+          </section>
+
+          <!-- 10. Launch -->
+          <section class="step-card" aria-labelledby="step-launch">
+            <h3 id="step-launch">10) Launch &amp; Post‑Flight Analysis</h3>
+            <p>Launch per NAR safety code, record data, compare to simulation, capture improvements.</p>
+            <ul class="link-list">
+              <li><a href="#" onclick="missing('Launch operations page')">Launch procedures</a></li>
+              <li><a href="#" onclick="missing('Flight report & analysis page')">Flight report &amp; analysis</a></li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- If you still want your large "content-source" block in this file,
+       you can paste it back here. It's not needed for the landing panel. -->
+
+  <script>
+    function missing(name) {
+      document.getElementById('content-area').innerHTML =
+        `<div class="landing-container"><h2>${name}</h2><p>This module isn't published yet. Ask your instructor or check back soon.</p></div>`;
+      // Scroll to top for consistency
+      document.getElementById('content-area').scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    async function loadContent(file) {
+      try {
+        const response = await fetch(file, { cache: 'no-cache' });
+        if (response.ok) {
+          const content = await response.text();
+          document.getElementById('content-area').innerHTML = content;
+          document.getElementById('content-area').scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          console.error('Error loading file:', response.status, response.statusText);
+          document.getElementById('content-area').innerHTML =
+            `<div class="landing-container"><p>Sorry, I couldn’t load that module.</p><pre>${response.status} ${response.statusText}</pre></div>`;
+        }
+      } catch (error) {
+        console.error('Fetch error:', error);
+        document.getElementById('content-area').innerHTML =
+          `<div class="landing-container"><p>Network error loading the module.</p><pre>${error}</pre></div>`;
+      }
+    }
+
+    // Enable ALL dropdown toggles (not just the first one)
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.dropdown > a').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          e.preventDefault();
+          const menu = anchor.nextElementSibling;
+          if (!menu) return;
+          menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

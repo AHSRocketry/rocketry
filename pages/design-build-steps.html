@@ -1,0 +1,136 @@
+
+<!-- /rocketry/pages/design-build-steps.html -->
+<div class="landing-container">
+  <h2 class="landing-header">Design &amp; Build — Start Here</h2>
+  <p>This is the complete, click-through workflow. Use these links or the left menu. Only this center area will change.</p>
+  <hr class="hr-soft" />
+
+  <div class="step-grid">
+
+    <!-- 1) Mission -->
+    <section class="step-card">
+      <h3>1) Mission Requirements &amp; Constraints</h3>
+      <p>Define the goal (basic flight, payload, altitude) and inventory materials, motors, tools.</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="missing('Mission Planning');return false;">Specify the rocket’s mission</a></li>
+        <li><a href="#" onclick="missing('Materials &amp; Motors Overview');return false;">Materials &amp; motors available</a></li>
+        <li><a href="#" onclick="missing('Tools Inventory');return false;">Tools you can use</a></li>
+      </ul>
+    </section>
+
+    <!-- 2) OpenRocket -->
+    <section class="step-card">
+      <h3>2) Design in OpenRocket</h3>
+      <p>Create the digital design and verify stability (CG vs CP).</p>
+      <ul class="link-list">
+        <!-- Wire directly to your existing modules -->
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html');return false;">Install / Setup</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html');return false;">OpenRocket — Basics</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-nose-cone.html');return false;">Design the Nose Cone</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-body-tube.html');return false;">Design the Body Tube</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-motor-mount.html');return false;">Design the Motor Mount</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-fins.html');return false;">Design the Fins</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-recovery-systems.html');return false;">Design the Recovery System</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html');return false;">Check CG vs CP (Stability)</a></li>
+        <li><a href="#" onclick="missing('OpenRocket — Design Checklist');return false;">Complete the Design Checklist</a></li>
+      </ul>
+    </section>
+
+    <!-- 3) OnShape -->
+    <section class="step-card">
+      <h3>3) Draft Parts in OnShape</h3>
+      <p>Create CAD for printed and laser-cut parts (nose, transitions, rings, fins, retainers, jigs).</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="missing('OnShape — Create an Account');return false;">Create an OnShape Account</a></li>
+        <li><a href="#" onclick="missing('OnShape — Basics');return false;">OnShape — Basics</a></li>
+        <li><a href="#" onclick="missing('OnShape — Nose Cone');return false;">Make a Nose Cone</a></li>
+        <li><a href="#" onclick="missing('OnShape — Transition');return false;">Make a Transition</a></li>
+        <li><a href="#" onclick="missing('OnShape — Centering Ring/Bulkhead');return false;">Make a Centering Ring/Bulkhead</a></li>
+        <li><a href="#" onclick="missing('OnShape — Fin');return false;">Make a Fin</a></li>
+        <li><a href="#" onclick="missing('OnShape — Retainer');return false;">Make a Retainer</a></li>
+        <li><a href="#" onclick="missing('OnShape — Slot Cutting Guide');return false;">Make a Slot Cutting Guide</a></li>
+        <li><a href="#" onclick="missing('OnShape — Fin Alignment Jig');return false;">Make a Fin Alignment Jig</a></li>
+      </ul>
+    </section>
+
+    <!-- 4) 3D Printing -->
+    <section class="step-card">
+      <h3>4) Fabrication — 3D Printing</h3>
+      <p>Export STL from OnShape, slice in Cura, then print.</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="missing('Cura Slicer — Basics');return false;">Learn Cura Slicer</a></li>
+        <li><a href="#" onclick="missing('3D Printing Workflow');return false;">3D‑print Nose Cones &amp; Transitions</a></li>
+      </ul>
+    </section>
+
+    <!-- 5) Laser Cutting -->
+    <section class="step-card">
+      <h3>5) Fabrication — Laser Cutting</h3>
+      <p>Cut flat parts on Glowforge.</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="missing('Glowforge — How To');return false;">Using the Glowforge</a></li>
+        <li><a href="#" onclick="missing('Cut Rings &amp; Bulkheads');return false;">Cut centering rings &amp; bulkheads</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html');return false;">Cut fins</a></li>
+        <li><a href="#" onclick="missing('Cut Fin Alignment Jigs');return false;">Cut fin‑alignment jigs</a></li>
+      </ul>
+    </section>
+
+    <!-- 6) Tubes & Slots -->
+    <section class="step-card">
+      <h3>6) Body &amp; Motor Tubes, Slots, Edges</h3>
+      <p>Select tubes and prep them for assembly.</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-body-tube.html');return false;">Select body tube, cut to length, and cut fin slots</a></li>
+        <li><a href="#" onclick="missing('Motor Tubes — Select &amp; Cut');return false;">Select motor tube(s) &amp; cut to length</a></li>
+        <li><a href="#" onclick="missing('Motor Blocks — Cut');return false;">Cut motor blocks</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html');return false;">Round fin edges</a></li>
+      </ul>
+    </section>
+
+    <!-- 7) Assembly -->
+    <section class="step-card">
+      <h3>7) Assembly</h3>
+      <p>Dry‑fit, glue internal structures, integrate fins, transitions, recovery, and nose.</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="missing('Assemble the Motor Mount');return false;">Assemble the motor mount</a></li>
+        <li><a href="#" onclick="missing('Install Motor Mount');return false;">Insert motor mount into body tube</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html');return false;">Insert fins</a></li>
+        <li><a href="#" onclick="missing('Install Transitions');return false;">Insert transitions</a></li>
+        <li><a href="#" onclick="missing('Install Recovery System');return false;">Insert recovery system</a></li>
+        <li><a href="#" onclick="missing('Attach Nose Cone');return false;">Attach the nose cone</a></li>
+      </ul>
+    </section>
+
+    <!-- 8) Finishing -->
+    <section class="step-card">
+      <h3>8) Finishing</h3>
+      <p>Surface prep, sanding, priming, and painting.</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html');return false;">Spray fill &amp; surface prep</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html');return false;">Sand smooth</a></li>
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-finishing.html');return false;">Paint the rocket</a></li>
+      </ul>
+    </section>
+
+    <!-- 9) Pre-Flight -->
+    <section class="step-card">
+      <h3>9) Pre‑Flight (Stability, Safety, Checklist)</h3>
+      <p>Weigh, update OpenRocket, verify CP/CG, confirm retention & recovery, complete checklist.</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html');return false;">Re‑check stability (CG vs CP)</a></li>
+        <li><a href="#" onclick="missing('Safety &amp; Pre‑Flight Checklist');return false;">Safety &amp; pre‑flight checklist</a></li>
+      </ul>
+    </section>
+
+    <!-- 10) Launch -->
+    <section class="step-card">
+      <h3>10) Launch &amp; Post‑Flight Analysis</h3>
+      <p>Launch per NAR safety code, record data, compare to simulation, capture improvements.</p>
+      <ul class="link-list">
+        <li><a href="#" onclick="missing('Launch Procedures');return false;">Launch procedures</a></li>
+        <li><a href="#" onclick="missing('Flight Report &amp; Analysis');return false;">Flight report &amp; analysis</a></li>
+      </ul>
+    </section>
+
+  </div>
+</div>

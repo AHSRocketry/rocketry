@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <title>Design & Build</title>
+  <!-- RESTORED: proper CSS link tag -->
   <link href="rocketry.css" type="text/css" rel="stylesheet" />
 
-  <!-- Minimal, additive styles for the landing cards (won’t clash with your CSS) -->
+  <!-- Minimal additive styles for the landing cards -->
   <style>
     .landing-container { padding: 16px; color: var(--content-text, #222); }
     .landing-header { margin: 0 0 12px 0; color: var(--content-text, #222); }
@@ -26,6 +27,7 @@
 <body>
   <!-- Header Section -->
   <header class="header">
+    <!-- RESTORED: proper IMG tag -->
     <img src="./images/AHSRocketryLogo.png" class="header-logo" alt="AHS Rocketry Logo" />
     <h1 class="title">American Heritage Rocketry</h1>
   </header>
@@ -34,7 +36,7 @@
   <nav class="nav-buttons">
     <a class="button" href="mainPage.html">Home</a>
     <a class="button" href="about.html">About</a>
-    <button class="current-page" onclick="location.href='fabrication-2.html'">Design &amp; Build</button>
+    <button class="current-page" onclick="location.href='fabrication.html'">Design &amp; Build</button>
     <a class="button" href="arcatAHS.html">ARC at AHS</a>
     <a class="button" href="schedule.html">Schedule</a>
   </nav>
@@ -68,14 +70,14 @@
           <li class="dropdown">
             <a href="#">Fabrication &#9662;</a>
             <ul class="dropdown-content" style="display: none;">
-              <!-- For items without pages yet, we’ll show a helpful inline message -->
-              <li><a href="#" onclick="missing('Fabrication — Nose'); return false;">Nose</a></li>
+              <!-- Wire up the ones you already have; others can show a friendly placeholder -->
+              <li><a href="#" onclick="missing('Nose Fabrication'); return false;">Nose</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-body-tube.html'); return false;">Body Tube</a></li>
-              <li><a href="#" onclick="missing('Fabrication — Motor Mount'); return false;">Motor Mount</a></li>
+              <li><a href="#" onclick="missing('Motor Mount Fabrication'); return false;">Motor Mount</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/fab-fins.html'); return false;">Fins</a></li>
-              <li><a href="#" onclick="missing('Fabrication — Retainers'); return false;">Retainers</a></li>
-              <li><a href="#" onclick="missing('Fabrication — Recovery Systems'); return false;">Recovery Systems</a></li>
-              <li><a href="#" onclick="missing('Fabrication — Finishing'); return false;">Finishing</a></li>
+              <li><a href="#" onclick="missing('Retainers Fabrication'); return false;">Retainers</a></li>
+              <li><a href="#" onclick="missing('Recovery Systems Fabrication'); return false;">Recovery Systems</a></li>
+              <li><a href="#" onclick="missing('Finishing (Fabrication)'); return false;">Finishing</a></li>
             </ul>
           </li>
 
@@ -93,7 +95,7 @@
         <hr class="hr-soft" />
 
         <div class="step-grid">
-          <!-- 1. Mission -->
+          <!-- 1) Mission -->
           <section class="step-card">
             <h3>1) Mission Requirements &amp; Constraints</h3>
             <p>Define the goal (basic flight, payload, altitude) and inventory materials, motors, tools.</p>
@@ -104,7 +106,7 @@
             </ul>
           </section>
 
-          <!-- 2. OpenRocket -->
+          <!-- 2) OpenRocket -->
           <section class="step-card">
             <h3>2) Design in OpenRocket</h3>
             <p>Create the digital design and verify stability (CG vs CP).</p>
@@ -116,12 +118,12 @@
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-motor-mount.html'); return false;">Design the Motor Mount</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-fins.html'); return false;">Design the Fins</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-recovery-systems.html'); return false;">Design the Recovery System</a></li>
-              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html'); return false;">Check CG vs CP (Stability)</a></li>
-              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html'); return false;">Complete the Design Checklist</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html'); return false;">Check CG vs CP (Stability)</a></li>
+              <li><a href="#" onclick="missing('OpenRocket — Design Checklist'); return false;">Complete the Design Checklist</a></li>
             </ul>
           </section>
 
-          <!-- 3. OnShape -->
+          <!-- 3) OnShape -->
           <section class="step-card">
             <h3>3) Draft Parts in OnShape</h3>
             <p>Create CAD for printed and laser-cut parts (nose, transitions, rings, fins, retainers, jigs).</p>
@@ -138,7 +140,7 @@
             </ul>
           </section>
 
-          <!-- 4. 3D Printing -->
+          <!-- 4) 3D Printing -->
           <section class="step-card">
             <h3>4) Fabrication — 3D Printing</h3>
             <p>Export STL from OnShape, slice in Cura, then print.</p>
@@ -148,7 +150,7 @@
             </ul>
           </section>
 
-          <!-- 5. Laser Cutting -->
+          <!-- 5) Laser Cutting -->
           <section class="step-card">
             <h3>5) Fabrication — Laser Cutting</h3>
             <p>Cut flat parts on Glowforge.</p>
@@ -160,7 +162,7 @@
             </ul>
           </section>
 
-          <!-- 6. Tubes & Slots -->
+          <!-- 6) Tubes & Slots -->
           <section class="step-card">
             <h3>6) Body &amp; Motor Tubes, Slots, Edges</h3>
             <p>Select tubes and prep them for assembly.</p>
@@ -172,7 +174,7 @@
             </ul>
           </section>
 
-          <!-- 7. Assembly -->
+          <!-- 7) Assembly -->
           <section class="step-card">
             <h3>7) Assembly</h3>
             <p>Dry‑fit, glue internal structures, integrate fins, transitions, recovery, and nose.</p>
@@ -186,7 +188,7 @@
             </ul>
           </section>
 
-          <!-- 8. Finishing -->
+          <!-- 8) Finishing -->
           <section class="step-card">
             <h3>8) Finishing</h3>
             <p>Surface prep, sanding, priming, and painting.</p>
@@ -197,17 +199,17 @@
             </ul>
           </section>
 
-          <!-- 9. Pre-Flight -->
+          <!-- 9) Pre-Flight -->
           <section class="step-card">
             <h3>9) Pre‑Flight (Stability, Safety, Checklist)</h3>
             <p>Weigh, update OpenRocket, verify CP/CG, confirm retention & recovery, complete checklist.</p>
             <ul class="link-list">
-              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html'); return false;">Re‑check stability (CG vs CP)</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html'); return false;">Re‑check stability (CG vs CP)</a></li>
               <li><button class="linklike" onclick="missing('Safety &amp; Pre‑Flight Checklist')">Safety &amp; pre‑flight checklist</button></li>
             </ul>
           </section>
 
-          <!-- 10. Launch -->
+          <!-- 10) Launch -->
           <section class="step-card">
             <h3>10) Launch &amp; Post‑Flight Analysis</h3>
             <p>Launch per NAR safety code, record data, compare to simulation, capture improvements.</p>
@@ -269,4 +271,3 @@
   </script>
 </body>
 </html>
-

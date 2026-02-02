@@ -3,10 +3,32 @@
     <h2 class="content-header">Designing in OpenRocket</h2>
     <p>Body tubes are best designed in OpenRocket using built-in presets, as this will capture the proper outer and inner diameters, thickness, and material automatically. All that is left to do afterward is to adjust the length of the tube to achieve the proper centers of gravity and pressure for a good stability score. It is very important that the material of the body tube reflect reality as it is likely the largest piece of the rocket, and any incorrect materials will seriously compromise stability calculations. </p>
     <h2>Checklist</h2>
-    <p>Check your own body tube by checking the following items:</p>
-    <ul>
-      <li></li>
-    </ul>
+    <div class="content-container">
+      <div class="content-left">
+        <ol><h4>General Tab</h4>
+          <li>Parts Library. Pick the size of tube from the parts library.</li>
+          <li>Length of body tube. Extend this to move the CG forward, decrease it to move the CG backward.</li>
+          <li>Outer Diameter. Match the values given by the parts library for your size of tube or the table below.</li>
+          <li>Inner Diameter. Match the values given by the parts library for your size of tube or the table below.</li>
+          <li>Wall Thickness. Match the values given by the parts library for your size of tube or the table below.</li>
+          <li>Compoenent Material. Match the values given by the parts library for your size of tube or the table below.</li>
+          <li>Component Finish. Select smooth paint.</li>
+        </ol>
+        <ol><h4>Motor Tab</h4>
+          <li>Check this box if you are planning on using your body tube as a motor mount. That is, if you are <strong>not</strong> using an inner tube and centering rings for your motor.</li>
+          <li>Motor overhang. Enter the amount your motor will extend outward from the tube. For small motors, select 6.35mm or 1/4 inch. For large motors, measure the length of the motor thrust ring.</li>
+          <li>Ignition at: Check this box if you are using a computer to ignite a motor.</li>
+        </ol>
+        <ol><h4>Override Tab</h4>
+          <li>Override Mass: once the body tube is cut to length, weigh it to find the actual mass. Check this box and add the actual value.</li>
+          <li>Override center of gravity CG: this allows you to override the location of the center of gravity (CG). Leave unchecked unless you have a way of measuring this.</li>
+          <li>Override coefficient of drag: leave unchecked unless you have a way of measuring this value.</li>
+        </ol>
+      </div>
+      <div class="content-right">
+        <img src="./images/OR-Body-Tube_01.png" />
+      </div>
+    </div>
     <h3 class="content-header">Video Example</h3>
     <iframe
       width= "100%"

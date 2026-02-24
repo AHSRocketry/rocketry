@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Design & Build</title>
-  <!-- RESTORED: proper CSS link tag -->
+  
   <link href="rocketry.css" type="text/css" rel="stylesheet" />
 
   <!-- Minimal additive styles for the landing cards -->
@@ -98,7 +98,7 @@
         <div class="step-grid">
           <!-- 1) Mission -->
           <section class="step-card">
-            <h3>1) Mission Requirements &amp; Constraints</h3>
+            <h3>Step 1) Mission Requirements &amp; Constraints</h3>
             <p>Define the goal (basic flight, payload, altitude) and inventory materials, motors, tools.</p>
             <ul class="link-list">
               <li><a href="#" onclick="loadContent('mission-specify.html')">Specify the rocket’s mission</a></li>
@@ -109,36 +109,37 @@
 
           <!-- 2) OpenRocket -->
           <section class="step-card">
-            <h3>2) Design in OpenRocket</h3>
-            <p>Create the digital design and verify stability (CG vs CP).</p>
-            <ul class="link-list">
+            <h3>Step 2) Design in OpenRocket</h3>
+            <p>Create the digital design and verify stability (CG vs CP) and thrust/weight ratio (> 5).</p>
+            <ol class="link-list">
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html'); return false;">Install / Setup</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/openrocket.html'); return false;">OpenRocket — Basics</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-nose-cone.html'); return false;">Design the Nose Cone</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-body-tube.html'); return false;">Design the Body Tube</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-motor-mount.html'); return false;">Design the Motor Mount</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-fins.html'); return false;">Design the Fins</a></li>
-              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-recovery-systems.html'); return false;">Design the Recovery System</a></li>
               <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/aerodynamics.html'); return false;">Check CG vs CP (Stability)</a></li>
+              <li><a href="#" onclick="loadContent('https://ahsrocketry.github.io/rocketry/pages/or-recovery-systems.html'); return false;">Design the Recovery System</a></li>
               <li><a href="#" onclick="missing('OpenRocket — Design Checklist'); return false;">Complete the Design Checklist</a></li>
-            </ul>
+            </ol>
           </section>
 
           <!-- 3) OnShape -->
           <section class="step-card">
-            <h3>3) Draft Parts in OnShape</h3>
-            <p>Create CAD for printed and laser-cut parts (nose, transitions, rings, fins, retainers, jigs).</p>
-            <ul class="link-list">
+            <h3>Step 3) Fabricate Parts</h3>
+            <p>Build the physical parts for your rocket. Involves 3D printing, cutting, and gluing parts together.</p>
+            <ol class="link-list">
               <li><button class="linklike" onclick="missing('OnShape — Create an Account')">Create an OnShape Account</button></li>
-              <li><button class="linklike" onclick="missing('OnShape — Basics')">OnShape — Basics</button></li>
-              <li><button class="linklike" onclick="missing('OnShape — Nose Cone')">Make a Nose Cone</button></li>
-              <li><button class="linklike" onclick="missing('OnShape — Transition')">Make a Transition</button></li>
-              <li><button class="linklike" onclick="missing('OnShape — Centering Ring/Bulkhead')">Make a Centering Ring/Bulkhead</button></li>
+              <li><button class="linklike" onclick="missing('OnShape — Basics')">OnShape — Basics (optional)</button></li>
+              <li><button class="linklike" onclick="missing('OnShape — Nose Cone')">Make a Nose Cone and/or Transition (Easy Way)</button></li>
+              <li><button class="linklike" onclick="missing('OnShape — Transition')">Make a Nose Cone and/or Transition (Hard Way)</button></li>
+              <li><button class="linklike" onclick="missing('OnShape — Transition')">Cutting Tubes</button></li>
+              <li><button class="linklike" onclick="missing('OnShape — Centering Ring/Bulkhead')">Make a Centering Ring/Bulkhead (optional)</button></li>
               <li><button class="linklike" onclick="missing('OnShape — Fin')">Make a Fin</button></li>
               <li><button class="linklike" onclick="missing('OnShape — Retainer')">Make a Retainer</button></li>
               <li><button class="linklike" onclick="missing('OnShape — Slot Cutting Guide')">Make a Slot Cutting Guide</button></li>
               <li><button class="linklike" onclick="missing('OnShape — Fin Alignment Jig')">Make a Fin Alignment Jig</button></li>
-            </ul>
+            </ol>
           </section>
 
           <!-- 4) 3D Printing -->
